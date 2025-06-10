@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculate age</title>
+    <!-- add css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- add bootstrap -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-    
+    <!-- start project -->
+    <section class="d-flex flex-row flex-wrap justify-content-center align-content-center  project">
+        <div class="infoCard rounded-5 col-4 ">
+            <form action="" method="get" class=" d-flex  flex-column flex-wrap " >
+                <label for="name" class="form-label d-flex justify-content-between">
+                    <span>name:</span>
+                    <input type="text" name="name" id="name" class="nameInput">
+                </label>
+                <label for="birthDate" class="form-label d-flex justify-content-between">
+                    <span>date of birth:</span>
+                    <input type="date" name="birthDate" id="birthDate" class="dateInput col-5">
+                </label>
+<button type="submit" class="col-7 mx-auto btn btn-md calcBtn">calculate</button>
+            </form>
+
+        </div>
+
+    </section>
 </body>
+<!-- add js file -->
 <script src="js/main.js"></script>
+<!-- add bootstrap js file -->
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </html>

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../images/martin-reisch-y6fTK4k2J6c-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.project{
+    height: 100vh;
+    width: 100%;
+    background-color: #2b2b2bda;
+     .infoCard{
+        height: auto;
+        padding: 24px;
+        background-color: rgba(255, 255, 255, 0.503);
+        >form{
+            
+            .form-label{
+                .nameInput, .dateInput{
+                    border: none;
+                    border-bottom: 1px solid #30332A;
+                    background: none;
+                    &:focus{
+                        outline: none;
+                        border-bottom: 2px solid #476b06;
+                        color: #476b06;
+                    }
+                }
+                >span{
+                    color: #30332A;
+                    text-transform: capitalize;
+                }
+                
+            }
+            .calcBtn{
+                    background-color: #30332A;
+                    color: white;
+                    &:hover{
+                        background-color: #476b06;
+                    }
+                }
+        }
+    }
+}
