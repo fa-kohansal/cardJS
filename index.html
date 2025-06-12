@@ -12,11 +12,11 @@
 <body>
     <!-- start project -->
     <section class="d-flex flex-row flex-wrap justify-content-center align-content-center  project">
-        <div class="infoCard rounded-5 col-4 ">
-            <form action="" method="get" class=" d-flex  flex-column flex-wrap " >
+        <div class="infoCard d-flex rounded-5 col-4 " id="infoCard ">
+            <form action="" method="get" class=" d-flex  flex-column w-100 flex-wrap " >
                 <label for="name" class="form-label d-flex justify-content-between">
                     <span>name:</span>
-                    <input type="text" name="name" id="name" class="nameInput">
+                    <input type="text" name="name" id="clientName" class="nameInput">
                 </label>
                 <label for="birthDate" class="form-label d-flex justify-content-between">
                     <span>date of birth:</span>
@@ -25,6 +25,11 @@
 <button type="submit" class="col-7 mx-auto btn btn-md calcBtn">calculate</button>
             </form>
 
+        </div>
+        <div class="showAge d-none rounded-5 col-4" id="showAge">
+            <h2 class="text-capitalize text-center">dear <span id="username">farnaz</span> </h2>
+            <h5 class="text-capitalize text-center">you are</h5>
+            <h1 id="userAge" class="text-center animate__heartBeat">27</h1>
         </div>
 
     </section>
